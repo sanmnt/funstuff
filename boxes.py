@@ -11,7 +11,7 @@ class Test:
         self.root = Toplevel(master)
         self.root.title("lol")
         self.root.protocol("WM_DELETE_WINDOW", self.on_exit)
-        self.photo = PhotoImage(file='johnpython.png')
+        self.photo = PhotoImage(file='picture.png')
         self.win_dim = f"{self.photo.width()}x{self.photo.height()}+"
 
         self.root.geometry(self.win_dim + "100+100")
@@ -48,6 +48,6 @@ class Test:
 tk = Tk()
 tk.withdraw()
 Test(tk)
-playsound('music/christmas.mp3', block = False)
+playsound('music.mp3', block = False)
 
 tk.mainloop()
